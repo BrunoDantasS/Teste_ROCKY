@@ -1,52 +1,101 @@
-
-html {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.5;
-}
+/* Configurações Gerais */
 
 body {
-  width: 100%;
+  font-family: 'Montserrat', sans-serif;
   height: 100%;
+  line-height: 1.5;
   margin: 0;
+  width: 100%;
 }
 
 header {
+  display: flex;
+  font-weight: 700;
   position: fixed;
   width: 100vw;
-  z-index: 999;
+  margin-top: 5vh;
+}
+
+/* Configurações Específicas */
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: white;
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0em 0;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
-ul {
-  display: block;
-  list-style-type: disc;
+ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  height: 10vh;
+  flex-flow: row wrap;
+  margin-top: 8px;
+}
+
+li {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  height: 15vh;
+}
+
+.header-content {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  justify-content: space-between;
+  margin-top: 0;
 }
 
 .header-content .container-logo img {
-  max-height: 36px;
+  height: 6.5vh;
+  margin-left: 15vh;
 }
 
-.container-menu-nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+.container-menu-nav {
+  margin-right: 15vh;
 }
 
-.site-content {
-  overflow-x: hidden;
-  position: relative;
-}
-
-.hero {
+.principal {
   background-image: url("/assets/web/s1\ ft1.png");
-  background-position: 50%;
   background-size: cover;
+  background-attachment: fixed; 
+  border: 1px solid;
+  display: flex;  
   height: 100vh;
+}
+
+.container {
+  color: white;
+  padding-top: calc(7rem + 60px);
+  padding-bottom: 3rem;
+}
+
+.hero-button {
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  display: inline-block;
+  text-transform: uppercase;
+  background: #1cd4e9;
+  padding: 15px 30px;
+  border-radius: 271px;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 8rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.yellow {
+  color: yellow;
 }
 
 .about {
