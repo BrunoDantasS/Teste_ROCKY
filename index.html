@@ -17,40 +17,47 @@
       <div class="container-logo">
         <a class="link-logo" href="https://rocky.ag" title="Link para Home">
           <h1>
-            <img class="logo" src="assets/web/logo.png" alt="Rocky-logo" title="Rocky" widht="161" height="40">
+            <img class="logo" id="logo-header" src="assets/web/logo.png" alt="Rocky logo" title="Rocky">
           </h1>
         </a>
       </div>
       <div class="container-menu-nav">
         <nav>
-          <ul>
+          <ul class="menu-items">
             <li>
-              <a class="item1" href="https://rocky.ag/#sobre">SOBRE A ROCKY</a>
+              <a href="#about">SOBRE A ROCKY</a>
             </li>
             <li>
-              <a href="https://rocky.ag/#servicos">SERVIÇOS</a>
+              <a href="#services">SERVIÇOS</a>
             </li>
             <li>
-              <a href="https://rocky.ag/#diferenciais">DIFERENCIAIS</a>
+              <a href="#differentials">DIFERENCIAIS</a>
             </li>
             <li>
               <a href="https://rocky.gupy.io/">TRABALHE CONOSCO</a>
             </li>
             <li>
-              <a href="https://rocky.ag/#contato">CONTATO</a>
+              <a href="#contact-form">CONTATO</a>
             </li>
             <li>
               <a href="https://blog.rocky.ag">BLOG</a>
             </li>
           </ul>
+          <svg class="menu-mobile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 18">
+            <g transform="translate(-306 -24)">
+              <rect class="a" width="30" height="2" transform="translate(306 24)"></rect>
+              <rect class="a" width="30" height="2" transform="translate(306 32)"></rect>
+              <rect class="a" width="30" height="2" transform="translate(306 40)"></rect>
+            </g>
+          </svg>
         </nav>
-      </div>
-    </div>
+      </div> <!--End container-menu-nav-->
+    </div> <!--End header-content-->
   </header>
   <main>
     <section class="principal">
       <div class="container">
-        <h2 class="section-title hero-title">
+        <h2 class="principal-title">
           FULL DIGITAL PERFORMANCE
         </h2>
         <div class="hero-description">
@@ -62,7 +69,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2 class="container section-title">Sobre a Rocky</h2>
       <div class="container about-content-description">
         <div class="about-description">
@@ -71,7 +78,7 @@
       </div>
     </section>
 
-    <section class="services container">
+    <section class="services container" id="services">
       <h2 class="section-tilte services-title">Serviços</h2>
       <div class="services-itens-container">
         <div class="service-content-description">
@@ -89,11 +96,10 @@
           <p>Lorem ipsum dolor sit amet, consectetur sadipiscing elitr, sed diam nonuty eirmod tempor invidunt ut labore et dolore magna aliquyam erat, send diam</p>
           <p>Lorem ipsum dolor sit amet, consectetur sadipiscing elitr, sed diam nonuty eirmod tempor invidunt ut labore et dolore magna aliquyam erat, send diam</p>
         </div>
-
       </div>
     </section>
 
-    <section class="differentials container">
+    <section class="differentials container" id="differentials">
       <h2 class="section-tilte differential-title">Diferenciais</h2>
       <div class="differentials-itens-container">
         <div class="differentials-content-description">
@@ -136,7 +142,7 @@
           </div>
 
         </div>
-        <div class="container contact-form">
+        <div class="contact-form container" id="contact-form">
           <div role="form" class="wpcf7" id="wpcf7-f23-o1" lang="pt-BR" dir="ltr">
             <div class="screen-reader-response"></div>
             <form action="/#wpcf7-f23-o1" method="post" class="wpcf7-form" novalidate="novalidate">
@@ -168,5 +174,6 @@
     </section>
 
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
