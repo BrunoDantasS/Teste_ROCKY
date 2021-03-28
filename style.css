@@ -120,6 +120,14 @@ svg {
   display: none;
 }
 
+.container {
+  color: white;
+  padding-top: calc(7rem + 60px);
+  padding-bottom: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
 .principal {
   background-image: url("/assets/web/s1\ ft1.png");
   background-position: 50% 0px;
@@ -130,37 +138,36 @@ svg {
   height: 100vh;
 }
 
-.container {
-  color: white;
-  padding-top: calc(7rem + 60px);
-  padding-bottom: 3rem;
-  justify-content: center;
-  text-align: center;
-}
 
 .principal-title {
   font-size: 14vh;
   font-weight: 800;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
-.hero-button {
+.principal-description {
+  font-size: 14px;
+  margin-left: 27vw;
+  margin-right: 27vw;
+}
+
+.principal-button {
+  margin-top: 100px;
+}
+
+.principal-button a {
   font-weight: bold;
-  letter-spacing: 0.6px;
-  display: inline-block;
   text-transform: uppercase;
   background: #1cd4e9;
   padding: 15px 30px;
   border-radius: 271px;
-  border: none;
-  color: #ffffff;
-  margin-bottom: 8rem;
-  cursor: pointer;
-  text-decoration: none;
 }
 
-.yellow {
+
+.span-principal {
   color: yellow;
+  font-weight: bold;
 }
 
 .about {
